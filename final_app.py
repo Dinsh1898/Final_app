@@ -171,3 +171,6 @@ bar2 = alt.Chart(df2,title = "Bias").mark_bar().encode(
     alt.Y('bias:Q', axis=alt.Axis(format='%')),
     tooltip = ['bias']   
 )
+
+col1.altair_chart(bar1,use_container_width=True)
+col2.altair_chart(bar2 ,use_container_width=True)
